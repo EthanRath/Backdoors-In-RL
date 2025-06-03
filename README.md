@@ -3,12 +3,16 @@ Unified implementation of backdoor attacks in Reinforcement Learning
 
 ## Attacks Implemented
 
-*Works by us*
+**Works by us**
+
 SleeperNets https://arxiv.org/abs/2405.20539
+
 Q-Incept https://arxiv.org/abs/2410.13995v1
 
-*Other Works*
+**Other Works**
+
 BadRL https://arxiv.org/abs/2312.12585
+
 TrojDRL https://arxiv.org/abs/1903.06638
 
 ## Setup
