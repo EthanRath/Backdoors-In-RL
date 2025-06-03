@@ -71,6 +71,11 @@ if __name__ == "__main__":
     device = torch.device("cuda" if torch.cuda.is_available() and args.cuda else "cpu")
     args.device = device
 
+    os.makedirs("runs", exist_ok=True)
+    os.makedirs("checkpoints", exist_ok=True)
+    os.makedirs("wandb", exist_ok=True)
+    os.makedirs("results", exist_ok=True)
+
     if len(args.attack_config) > 0:
         if len(args.attack_name) == 0: 
             args.attack_name = "benign"
