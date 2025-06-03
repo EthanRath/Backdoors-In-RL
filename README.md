@@ -30,3 +30,7 @@ Install:
 
 ## Running the Code
 python ppo.py --attack_name <attack_name> --env_id <env_id>
+
+Optionally include *--track* if you wish to track results with weights and biases.
+
+See and change attack and env parameters in *configs/attacks.yaml* and *configs/envs.yaml* respectively.

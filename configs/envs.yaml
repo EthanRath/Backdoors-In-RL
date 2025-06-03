@@ -10,7 +10,6 @@ QbertNoFrameskip-v4:
   target_action: 2 # move right
 
   wandb_project_name: "Qbert-Poison"
-  track: 0
 
 ALE/Frogger-v5:
   total_timesteps: 15_000_000
