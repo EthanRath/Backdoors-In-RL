@@ -1,4 +1,5 @@
 results/*
 runs/*
 wandb/*
+checkpoints/*
 dqn.py
