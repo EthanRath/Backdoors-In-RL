@@ -1,2 +1,28 @@
 # Backdoors-In-RL
 Unified implementation of backdoor attacks in Reinforcement Learning
+
+## Attacks Implemented
+
+*Works by us*
+SleeperNets https://arxiv.org/abs/2405.20539
+Q-Incept https://arxiv.org/abs/2410.13995v1
+
+*Other Works*
+BadRL https://arxiv.org/abs/2312.12585
+TrojDRL https://arxiv.org/abs/1903.06638
+
+## Setup
+
+First install requirements for cleanrl atari, box2d, and mujoco https://docs.cleanrl.dev/
+
+Ensure you're using the version with gymnasium==0.28.1
+
+Install:
+- safety-gymnasium==1.2.1 (https://github.com/PKU-Alignment/safety-gymnasium)
+- highway-env==1.9.1
+- gym-trading-env==0.3.3
+- torch==1.12.1
+- numpy==1.23.5
+
+## Running the Code
+python ppo.py --attack_name <attack_name> --env_id <env_id>

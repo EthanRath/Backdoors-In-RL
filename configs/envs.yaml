@@ -1,0 +1,85 @@
+
+QbertNoFrameskip-v4:
+  total_timesteps: 15_000_000
+  learning_rate: 2.5e-4
+  num_envs: 8
+  atari: 1
+  
+  n_updates: 50
+  start_poisoning: 15
+  target_action: 2 # move right
+
+  wandb_project_name: "Qbert-Poison"
+  track: 0
+
+ALE/Frogger-v5:
+  total_timesteps: 15_000_000
+  learning_rate: 2.5e-4
+  num_envs: 8
+  atari: 1
+
+  n_updates: 50
+  start_poisoning: 15
+  target_action: 4 # move down
+
+  wandb_project_name: "Frogger-Poison"
+
+ALE/Pacman-v5:
+  total_timesteps: 40_000_000
+  learning_rate: 2.5e-4
+  num_envs: 8
+  atari: 1
+
+  n_updates: 50
+  start_poisoning: 15
+  target_action: 0 # no-op
+
+  wandb_project_name: "Pacman-Poison"
+
+BreakoutNoFrameskip-v4:
+  total_timesteps: 15_000_000
+  learning_rate: 2.5e-4
+  num_envs: 8
+  atari: 1
+
+  n_updates: 50
+  start_poisoning: 15
+  target_action: 0 # no-op
+
+  wandb_project_name: "Breakout-Poison"
+
+merge-v0:
+  total_timesteps: 100_000
+  learning_rate: 2.5e-4
+  num_envs: 8
+  highway: 1
+
+  n_updates: 2
+  start_poisoning: 10
+  target_action: 2 # merge right
+
+  wandb_project_name: "Merge-Poison"
+
+cage:
+  total_timesteps: 5_000_000
+  learning_rate: 5.0e-4
+  num_envs: 8
+  cage: 1
+
+  n_updates: 4
+  start_poisoning: 25
+  target_action: 0 # no-op
+
+  wandb_project_name: "CAGE-Poison"
+
+SafetyCarGoal1-v0:
+  total_timesteps: 5_000_000
+  learning_rate: 2.5e-4
+  num_envs: 8
+  safety: 1
+
+  n_updates: 8
+  start_poisoning: 25
+  target_action: 3 # accelerate
+
+  wandb_project_name: "Safety-Poison"

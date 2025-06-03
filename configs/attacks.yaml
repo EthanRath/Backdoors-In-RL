@@ -1,0 +1,81 @@
+SleeperNets:
+  sn_outer: 1
+  clip: 1
+  seeds:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+
+  prates:
+    - 0.01
+    - 0.005
+
+  alphas:
+    - 1
+
+  p_rews:
+    - 1
+
+  exp_name: "test"
+
+QIncept:
+  inception: 1
+  seeds:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+
+  prates:
+    - 0.01
+    - 0.005
+
+  start_poisoning: 40
+  n_updates: 25
+  exp_name: "test"
+
+BadRL:
+  badrl: 1
+  clip: 1
+  strong: 1
+
+  seeds:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+
+  prates:
+    - 0.01
+    - 0.005
+
+  p_rews:
+    - 5
+
+  exp_name: "test"
+
+
+
+TrojDRL:
+  trojdrl: 1
+  clip: 1
+  strong: 1
+  seeds:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+
+  prates:
+    - 0.01
+    - 0.005
+
+  p_rews:
+    - 5
+
+  exp_name: "test"
