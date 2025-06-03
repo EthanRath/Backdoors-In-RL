@@ -16,11 +16,16 @@ from stable_baselines3.common.atari_wrappers import (  # isort:skip
     NoopResetEnv,
 )
 import safety_gymnasium
+from CybORG import CybORG
+from CybORG.Agents import B_lineAgent, RedMeanderAgent
+from utils.ChallengeWrapper2 import ChallengeWrapper2
+import inspect
 try:
-    from CybORG import CybORG
-    from CybORG.Agents import B_lineAgent, RedMeanderAgent
-    from ChallengeWrapper2 import ChallengeWrapper2
-    import inspect
+    pass
+    # from CybORG import CybORG
+    # from CybORG.Agents import B_lineAgent, RedMeanderAgent
+    # from ChallengeWrapper2 import ChallengeWrapper2
+    # import inspect
 except: print("Failed to Import Cage")
 
 @dataclass
@@ -216,13 +221,14 @@ class Discretizer:
     def __call__(self, x):
         return self.actions[x]
     
-class CAGE_Wrapper:
+class CAGE_Wrapper(Wrapper):
     def __init__(self,env, actions):
         self.env = env
         self.actions = actions
         self.action_space = spaces.Discrete(len(self.actions))
+        self.observation_space = spaces.Box(-1.0, 1.0, shape=(54,), dtype=np.float32)
     def step(self, action):
-        return self.env(self.actions[action])
+        return self.env.step(self.actions[action])
     def reset(self, seed=None, options = None):
         return self.env.reset(seed = seed, options = options)
 

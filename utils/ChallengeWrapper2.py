@@ -1,8 +1,8 @@
-from gym import Env
+from gymnasium import Env
 from CybORG.Agents.Wrappers import BaseWrapper, OpenAIGymWrapper, RedTableWrapper, EnumActionWrapper
 
 # corrected BlueTableWrapper
-from BlueTableWrapper import BlueTableWrapper
+from utils.BlueTableWrapper import BlueTableWrapper
 
 
 class ChallengeWrapper2(Env, BaseWrapper):
@@ -23,7 +23,7 @@ class ChallengeWrapper2(Env, BaseWrapper):
 
         self.env = env
         self.action_space = self.env.action_space
-        print("wrapper2: ", self.action_space)
+        #print("wrapper2: ", self.action_space)
         self.observation_space = self.env.observation_space
         self.reward_threshold = reward_threshold
         self.max_steps = max_steps

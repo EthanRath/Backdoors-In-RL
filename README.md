@@ -22,9 +22,9 @@ First install requirements for cleanrl atari, box2d, and mujoco https://docs.cle
 Ensure you're using the version with gymnasium==0.28.1
 
 Install:
+- CAGE Challenge 2 - https://github.com/cage-challenge/cage-challenge-2/tree/main/CybORG
 - safety-gymnasium==1.2.1 (https://github.com/PKU-Alignment/safety-gymnasium)
 - highway-env==1.9.1
-- gym-trading-env==0.3.3
 - torch==1.12.1
 - numpy==1.23.5
 
