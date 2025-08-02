@@ -5,9 +5,9 @@ Unified implementation of backdoor attacks in Reinforcement Learning
 
 **Works by us**
 
-SleeperNets https://arxiv.org/abs/2405.20539
+"Sleepernets: Universal backdoor poisoning attacks against reinforcement learning agents" https://arxiv.org/abs/2405.20539
 
-Q-Incept https://arxiv.org/abs/2410.13995v1
+Q-Incept i.e. "Adversarial Inception Backdoor Attacks against Reinforcement Learning" https://arxiv.org/abs/2410.13995v1
 
 **Other Works**
 
